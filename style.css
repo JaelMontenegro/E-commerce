@@ -103,18 +103,29 @@ color: #464646;
 .cuadricula{
               
     display: grid;
-    grid: auto auto / auto auto auto auto; 
     grid-gap: 10px; 
     background-color: green; 
-    padding: 10px; 
+    padding: 10px;
+    grid-template-columns: auto auto auto auto auto auto;
 }
 .itemproducto { 
-    background-color: rgb(255, 255, 255); 
-    text-align: center; 
-    padding: 25px 0; 
-    font-size: 30px; 
-    height: auto;
+    background-color: rgb(255, 255, 255);  
+    height: 220px;
     flex-direction: column;
     display: flex;
     text-align: left;
+    max-width: 176px;
+    
+}
+.imagenproducto{
+    width: 176px;
+    height: auto;
+}
+.icono-imagen-producto{
+    margin-bottom: -30px;
+    z-index: 999;
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    padding-right: 10px;
 }
