@@ -1,3 +1,7 @@
+.section-central{
+    background-color:white;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -101,16 +105,17 @@ color: #464646;
 }
 
 .cuadricula{
-              
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;          
     display: grid;
     grid-gap: 10px; 
-    background-color: green; 
     padding: 10px;
     grid-template-columns: auto auto auto auto auto auto;
 }
 .itemproducto { 
     background-color: rgb(255, 255, 255);  
-    height: 220px;
+    height: 230px;
     flex-direction: column;
     display: flex;
     text-align: left;
@@ -123,9 +128,48 @@ color: #464646;
 }
 .icono-imagen-producto{
     margin-bottom: -30px;
+    margin-top: 15px;
     z-index: 999;
     display: flex;
     gap: 20px;
     flex-direction: row-reverse;
     padding-right: 10px;
+    height: 30px;
+}
+.titulo-todoslosproductos{
+    max-width: 1200px;
+    flex-direction:row ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 20px auto;
+}
+.texto-todoslosproductos{
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.titulo-banner{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.descripcion-banner{
+ font-size: 20px;
+}
+.banner-home{
+    background-image: url("/Imagenes/banner.jpg");
+    height: 400px;
+    background-size:100% ;
+    background-position-y: 70%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), 
+    url("/Imagenes/banner.jpg") ,
+    size 100%, position-y 70%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items:flex-start;
+    justify-content: flex-end;
+    padding: 0px 200px 50px 200px;
+
 }
